@@ -114,6 +114,65 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 Developed by: R.LOGA MITHRA
 RegisterNumber: 212223100027
 
+SR FLIP FLOP:
+
+module exp_5_1(S,R,clk,Q,Qbar);
+input S,R,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=S|((~R)&Q);
+Qbar=R|((~S)&(Qbar));
+end
+endmodule
+
+D FLIP FLOP:
+
+module exp_5D(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin 
+Q=D;
+Qbar=~D;
+end
+endmodule
+
+JK FLIP FLOP:
+
+module exp_5_2(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(J&(~Q))|((~K)&Q);
+Qbar=((~J)&(Qbar))|K&(~Qbar);
+end
+endmodule
+
+T FLIP FLOP:
+
+module exp_5_4(T,clk,Q,Qbar);
+input T,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(T&(~Q))|((~T)&Q);
+Qbar=((~T)&Qbar)|(T&(~Qbar));
+end 
+endmodule
 
 ```
 ### RTL LOGIC FOR FLIPFLOPS 
@@ -136,5 +195,15 @@ T FLIPFLOP
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+![SR_flipflop EX NO 5(1)](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/21710858-513e-4f1f-863a-f9c1ebf11f38)
+
+![image](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/b6560f20-bcb2-4132-94d7-947cd8b6c91d)
+
+![JK_flipflop EX NO 5(2)](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/6c397c09-f8b8-4024-836e-5dcb87a2d8eb)
+
+![image](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/709b3721-72f7-426d-bcc2-16e99c5c2bf4)
 
 ### RESULTS 
+```
+Implementation-of-flipflops-using-verilog successfully completed
+```
