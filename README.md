@@ -195,11 +195,19 @@ T FLIPFLOP
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+SR FLIPFLOP:
+
 ![SR_flipflop EX NO 5(1)](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/21710858-513e-4f1f-863a-f9c1ebf11f38)
+
+D FLIPFLOP:
 
 ![image](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/b6560f20-bcb2-4132-94d7-947cd8b6c91d)
 
+JK FLIPFLOP:
+
 ![JK_flipflop EX NO 5(2)](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/6c397c09-f8b8-4024-836e-5dcb87a2d8eb)
+
+T FLIPFLOP:
 
 ![image](https://github.com/mithra916/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149986612/709b3721-72f7-426d-bcc2-16e99c5c2bf4)
 
